@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>index</title>
+</head>
+<body>
+<form action="/login" method="post">
+    <table>
+        <span th:text="${msg}"></span>
+        <tr>
+            <td>用户名:</td>
+            <td>
+                <input type="text" name="username"/>
+            </td>
+        </tr>
+        <tr>
+            <td>密码:</td>
+            <td>
+                <input type="password" name="password"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="登陆"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</htmL>
+
+</html>
